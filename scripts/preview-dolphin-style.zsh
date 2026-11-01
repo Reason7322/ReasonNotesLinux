@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 # Isolated real-theme preview; no production or installed candidate changes.
 set -eu
-work="/home/reason/Temporary/ChatGPTProjects/ReasonNotesKvantum/worktrees/GlassBalance"
+work="/home/reason/Projects/ChatGPTProjects/ReasonNotesKvantum/worktrees/GlassBalance"
 cfg="/home/reason/.config"
 source_qt6ct="$cfg/qt6ct/qt6ct.conf"
 source_kvantum="$cfg/Kvantum/kvantum.kvconfig"
@@ -23,7 +23,7 @@ if [[ ! -r "$work/linux-app/native/libreasonnotes_wayland_blur.so" ]]; then
   print -u2 "Blur helper missing in separate source worktree"
   exit 1
 fi
-preview="/home/reason/Temporary/ChatGPTProjects/ReasonNotesKvantum/NativeQtPreview"
+preview="/home/reason/Projects/ChatGPTProjects/ReasonNotesKvantum/NativeQtPreview"
 mkdir -p "$preview/config/qt6ct" "$preview/config/Kvantum/$theme" \
          "$preview/data" "$preview/cache" "$preview/repository" \
          "$preview/inbox" "$preview/received"
